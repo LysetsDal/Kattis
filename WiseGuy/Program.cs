@@ -9,9 +9,7 @@ class Program
 {
     public static void Main()
     {
-        string simon = "Simon";
-        StringBuilder strb = new StringBuilder();
-
+        string simon = "";
         var output = new List<string>();
 
 
