@@ -6,7 +6,7 @@ using System.Linq;
 
 // Opgave: https://open.kattis.com/problems/2048 
 
-class Program
+class Program2
 {
     public static void Main()
     {
