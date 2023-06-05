@@ -19,7 +19,7 @@ class Program
         var reader = new StreamReader(bufferedStream);
 
         var num = int.TryParse(reader.ReadLine(), out var x) ? x : 0;
-        if (num < 1 || num > 100000) { return; }
+        // if (num < 1 || num > 100000) { return; }
 
         var words = new Index[num];
 
@@ -65,9 +65,7 @@ class Program
 
         }
 
-        var result = new StringBuilder("", 1000000);
-
-
+        var result = new StringBuilder();
 
         for (current = words[arr[0] - 1]; current != null; current = current.after!)
         {
