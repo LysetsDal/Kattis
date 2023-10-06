@@ -36,5 +36,6 @@ public class MumbleRap {
             }
         }
         System.out.println(result);
+        sc.close();
     }
 }

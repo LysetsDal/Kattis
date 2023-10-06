@@ -30,5 +30,6 @@ class Problems {
         }
 
         System.out.println(result);
+        sc.close();
     }
 }

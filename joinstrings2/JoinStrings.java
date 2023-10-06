@@ -5,10 +5,21 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-// https://open.kattis.com/problems/99problems
-// import java.util.Scanner;
 
-class Problems {
+// https://open.kattis.com/problems/99problems
+
+class JoinStrings {
+    public static class Index {
+
+        public Index before;
+        public Index after;
+        public String word;
+
+        public Index(String word) {
+            this.word = word;
+        }
+    }
+
     public static void main(String[] args) throws IOException, NumberFormatException {
         InputStream stream = System.in;
         BufferedInputStream bufferedStream = new BufferedInputStream(stream);
@@ -57,30 +68,5 @@ class Problems {
 
         System.out.println(strb.toString());
         reader.close();
-    }
-
-    public static class Index {
-
-        public Index before;
-        public Index after;
-        public String word;
-
-        public Index(Index before, Index after) {
-            this.before = before;
-            this.after = after;
-            this.word = "";
-        }
-
-        public Index(String word) {
-            this.word = word;
-        }
-
-        public String getWord() {
-            return this.word;
-        }
-
-        public void setWord(String word) {
-            this.word = word;
-        }
     }
 }
